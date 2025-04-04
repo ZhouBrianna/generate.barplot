@@ -1,0 +1,16 @@
+Package: generate.barplot
+Title: Generate Bar Plots Easily in R
+Version: 0.0.0.9000
+Authors@R: 
+    person("Brianna", "Zhou", , "briannazhou116@gmail.com", role = c("aut", "cre"))
+Description: This package simiplies bar plot creation in R, which is ideal for quick and efficient categorical data visualization.  
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    ggplot2,
+    rlang
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
