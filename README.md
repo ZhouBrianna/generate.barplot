@@ -39,8 +39,6 @@ generate_barplot(dataset = mtcars, x = "gear", x_name = "Gear")
 
 <img src="man/figures/README-example-1.png" width="100%" />
 
-<img src="man/figures/README-example-1.png" width="100%" />
-
 Notes - The `generate_barplot` function uses `ggplot2` for creating the
 plot - If the dataset or column specified by `x` is invalid, the
 function will stop with an error message.
