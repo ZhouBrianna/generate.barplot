@@ -41,8 +41,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(generate.barplot)
-barplot <- generate_barplot(dataset = mtcars, x = "gear", x_name = "Gear")
-print(barplot)
+generate_barplot(dataset = mtcars, x = "gear", x_name = "Gear")
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
