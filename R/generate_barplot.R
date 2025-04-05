@@ -35,16 +35,16 @@ generate_barplot <- function(dataset, x, x_name) {
 
     class_distribution <- ggplot2::ggplot(dataset, ggplot2::aes(x = !!rlang::sym(x), fill = !!rlang::sym(x))) +
         ggplot2::geom_bar() +
-        ggplot2::theme_minimal(base_size = 16) +
+        ggplot2::theme_minimal(base_size = 12) +
         ggplot2::labs(
             title = paste("Distribution of", x_name),
             x = x_name,
             y = "Count"
         ) +
         ggplot2::theme(
-            axis.text = ggplot2::element_text(size = 16),
-            axis.title = ggplot2::element_text(size = 18),
-            plot.title = ggplot2::element_text(size = 20, face = "bold")
+            axis.text = ggplot2::element_text(size = 12),
+            axis.title = ggplot2::element_text(size = 14),
+            plot.title = ggplot2::element_text(size = 16, face = "bold")
         )
 
     return(class_distribution)

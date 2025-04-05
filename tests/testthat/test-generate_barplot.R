@@ -8,16 +8,16 @@ test_data <- data.frame(class = factor(rep(c("A", "B", "C"), times = c(5, 3, 2))
 # Expected ggplot
 expcted_plot <- ggplot2::ggplot(test_data, ggplot2::aes(x = class, fill = class)) +
   ggplot2::geom_bar() +
-  ggplot2::theme_minimal(base_size = 16) +
+  ggplot2::theme_minimal(base_size = 12) +
   ggplot2::labs(
     title = "Distribution of Class",
     x = "Class",
     y = "Count"
   ) +
   ggplot2::theme(
-    axis.text = ggplot2::element_text(size = 16),
-    axis.title = ggplot2::element_text(size = 18),
-    plot.title = ggplot2::element_text(size = 20, face = "bold")
+    axis.text = ggplot2::element_text(size = 12),
+    axis.title = ggplot2::element_text(size = 14),
+    plot.title = ggplot2::element_text(size = 16, face = "bold")
   )
 
 # Generate plot
